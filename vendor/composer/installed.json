@@ -1,0 +1,1504 @@
+[
+    {
+        "name": "cycle/annotated",
+        "version": "v2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cycle/annotated.git",
+            "reference": "efa0b3d13f98e2239e2e6818a70b9f1fd20a4b52"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cycle/annotated/zipball/efa0b3d13f98e2239e2e6818a70b9f1fd20a4b52",
+            "reference": "efa0b3d13f98e2239e2e6818a70b9f1fd20a4b52",
+            "shasum": ""
+        },
+        "require": {
+            "cycle/schema-builder": "^1.0",
+            "doctrine/annotations": "^1.7",
+            "php": "^7.2",
+            "spiral/tokenizer": "^2.1"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~8.0",
+            "spiral/code-style": "^1.0",
+            "spiral/debug": "^1.3"
+        },
+        "time": "2020-02-08T10:35:58+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cycle\\Annotated\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Cycle ORM Annotated Entities generator"
+    },
+    {
+        "name": "cycle/bootstrap",
+        "version": "v0.4.0",
+        "version_normalized": "0.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cycle/bootstrap.git",
+            "reference": "3518942829800ad7be3e229795f851dcdd2a605c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cycle/bootstrap/zipball/3518942829800ad7be3e229795f851dcdd2a605c",
+            "reference": "3518942829800ad7be3e229795f851dcdd2a605c",
+            "shasum": ""
+        },
+        "require": {
+            "cycle/annotated": "^2.0",
+            "cycle/orm": "^1.1",
+            "cycle/proxy-factory": "^1.2",
+            "spiral/console": "^1.3"
+        },
+        "require-dev": {
+            "spiral/code-style": "^1.0"
+        },
+        "time": "2019-12-30T10:10:36+00:00",
+        "bin": [
+            "bin/cycle"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cycle\\Bootstrap\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Standalone build of Cycle ORM for quick integrations"
+    },
+    {
+        "name": "cycle/orm",
+        "version": "v1.2.7",
+        "version_normalized": "1.2.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cycle/orm.git",
+            "reference": "83426cac9746746e138ea1da72859b55d33987b2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cycle/orm/zipball/83426cac9746746e138ea1da72859b55d33987b2",
+            "reference": "83426cac9746746e138ea1da72859b55d33987b2",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/collections": "^1.5",
+            "doctrine/inflector": "^1.3",
+            "doctrine/instantiator": "^1.2",
+            "ext-pdo": "*",
+            "laminas/laminas-hydrator": "^2.4|^3.0",
+            "php": "^7.2",
+            "spiral/database": "^2.3"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~8.0",
+            "ramsey/uuid": "^3.8",
+            "spiral/code-style": "^1.0",
+            "spiral/dumper": "^1.0",
+            "spiral/tokenizer": "^2.1"
+        },
+        "time": "2020-04-26T14:17:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cycle\\ORM\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "PHP DataMapper ORM and Data Modelling Engine"
+    },
+    {
+        "name": "cycle/proxy-factory",
+        "version": "v1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cycle/proxy-factory.git",
+            "reference": "2345403f2c4a1fd0c7ce7849a6a67207512d59b7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cycle/proxy-factory/zipball/2345403f2c4a1fd0c7ce7849a6a67207512d59b7",
+            "reference": "2345403f2c4a1fd0c7ce7849a6a67207512d59b7",
+            "shasum": ""
+        },
+        "require": {
+            "cycle/orm": "^1.1",
+            "doctrine/instantiator": "^1.2",
+            "ext-mbstring": "*",
+            "nikic/php-parser": "^4.2",
+            "php": "^7.2",
+            "spiral/files": "^2.0"
+        },
+        "require-dev": {
+            "cycle/annotated": "^1.0",
+            "ext-pdo": "*",
+            "phpunit/phpunit": "~7.0",
+            "roave/security-advisories": "dev-master",
+            "spiral/code-style": "^1.0"
+        },
+        "time": "2020-01-08T08:16:43+00:00",
+        "type": "module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cycle\\ORM\\Promise\\": "src/Promise"
+            },
+            "files": [
+                "src/functions/utils.php",
+                "src/functions/expressions.php",
+                "src/functions/version.php",
+                "src/functions/injector.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Proxy Factory Interface implementation for cycle ORM"
+    },
+    {
+        "name": "cycle/schema-builder",
+        "version": "v1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cycle/schema-builder.git",
+            "reference": "2ce9af62ea26673397bcbdabf1c252debd3c4aa5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cycle/schema-builder/zipball/2ce9af62ea26673397bcbdabf1c252debd3c4aa5",
+            "reference": "2ce9af62ea26673397bcbdabf1c252debd3c4aa5",
+            "shasum": ""
+        },
+        "require": {
+            "cycle/orm": "^1.0",
+            "php": "^7.2"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~8.0",
+            "spiral/code-style": "^1.0",
+            "spiral/debug": "^1.3",
+            "spiral/tokenizer": "^2.1"
+        },
+        "time": "2020-04-09T09:25:07+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cycle\\Schema\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Cycle ORM Schema Builder"
+    },
+    {
+        "name": "doctrine/annotations",
+        "version": "1.10.2",
+        "version_normalized": "1.10.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/annotations.git",
+            "reference": "b9d758e831c70751155c698c2f7df4665314a1cb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/annotations/zipball/b9d758e831c70751155c698c2f7df4665314a1cb",
+            "reference": "b9d758e831c70751155c698c2f7df4665314a1cb",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/lexer": "1.*",
+            "ext-tokenizer": "*",
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "doctrine/cache": "1.*",
+            "phpunit/phpunit": "^7.5"
+        },
+        "time": "2020-04-20T09:18:32+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.9.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Docblock Annotations Parser",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "annotations",
+            "docblock",
+            "parser"
+        ]
+    },
+    {
+        "name": "doctrine/collections",
+        "version": "1.6.4",
+        "version_normalized": "1.6.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/collections.git",
+            "reference": "6b1e4b2b66f6d6e49983cebfe23a21b7ccc5b0d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/collections/zipball/6b1e4b2b66f6d6e49983cebfe23a21b7ccc5b0d7",
+            "reference": "6b1e4b2b66f6d6e49983cebfe23a21b7ccc5b0d7",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "require-dev": {
+            "doctrine/coding-standard": "^6.0",
+            "phpstan/phpstan-shim": "^0.9.2",
+            "phpunit/phpunit": "^7.0",
+            "vimeo/psalm": "^3.2.2"
+        },
+        "time": "2019-11-13T13:07:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.6.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.",
+        "homepage": "https://www.doctrine-project.org/projects/collections.html",
+        "keywords": [
+            "array",
+            "collections",
+            "iterators",
+            "php"
+        ]
+    },
+    {
+        "name": "doctrine/inflector",
+        "version": "1.3.1",
+        "version_normalized": "1.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/inflector.git",
+            "reference": "ec3a55242203ffa6a4b27c58176da97ff0a7aec1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/inflector/zipball/ec3a55242203ffa6a4b27c58176da97ff0a7aec1",
+            "reference": "ec3a55242203ffa6a4b27c58176da97ff0a7aec1",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.2"
+        },
+        "time": "2019-10-30T19:59:35+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Common String Manipulations with regard to casing and singular/plural rules.",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "inflection",
+            "pluralize",
+            "singularize",
+            "string"
+        ]
+    },
+    {
+        "name": "doctrine/instantiator",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/instantiator.git",
+            "reference": "ae466f726242e637cebdd526a7d991b9433bacf1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/instantiator/zipball/ae466f726242e637cebdd526a7d991b9433bacf1",
+            "reference": "ae466f726242e637cebdd526a7d991b9433bacf1",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "doctrine/coding-standard": "^6.0",
+            "ext-pdo": "*",
+            "ext-phar": "*",
+            "phpbench/phpbench": "^0.13",
+            "phpstan/phpstan-phpunit": "^0.11",
+            "phpstan/phpstan-shim": "^0.11",
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2019-10-21T16:45:58+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com",
+                "homepage": "http://ocramius.github.com/"
+            }
+        ],
+        "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+        "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
+        "keywords": [
+            "constructor",
+            "instantiate"
+        ]
+    },
+    {
+        "name": "doctrine/lexer",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/lexer.git",
+            "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/lexer/zipball/5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+            "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2"
+        },
+        "require-dev": {
+            "doctrine/coding-standard": "^6.0",
+            "phpstan/phpstan": "^0.11.8",
+            "phpunit/phpunit": "^8.2"
+        },
+        "time": "2019-10-30T14:39:59+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+        "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+        "keywords": [
+            "annotations",
+            "docblock",
+            "lexer",
+            "parser",
+            "php"
+        ]
+    },
+    {
+        "name": "laminas/laminas-hydrator",
+        "version": "3.0.2",
+        "version_normalized": "3.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laminas/laminas-hydrator.git",
+            "reference": "5c418d6e37ad363bef5ce1c8a72388243d6c7950"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laminas/laminas-hydrator/zipball/5c418d6e37ad363bef5ce1c8a72388243d6c7950",
+            "reference": "5c418d6e37ad363bef5ce1c8a72388243d6c7950",
+            "shasum": ""
+        },
+        "require": {
+            "laminas/laminas-stdlib": "^3.2.1",
+            "laminas/laminas-zendframework-bridge": "^1.0",
+            "php": "^7.2"
+        },
+        "replace": {
+            "zendframework/zend-hydrator": "self.version"
+        },
+        "require-dev": {
+            "laminas/laminas-coding-standard": "~1.0.0",
+            "laminas/laminas-eventmanager": "^3.2.1",
+            "laminas/laminas-modulemanager": "^2.8",
+            "laminas/laminas-serializer": "^2.9",
+            "laminas/laminas-servicemanager": "^3.3.2",
+            "phpspec/prophecy": "^1.7.5",
+            "phpstan/phpstan": "^0.10.5",
+            "phpunit/phpunit": "^7.5"
+        },
+        "suggest": {
+            "laminas/laminas-eventmanager": "^3.2, to support aggregate hydrator usage",
+            "laminas/laminas-serializer": "^2.9, to use the SerializableStrategy",
+            "laminas/laminas-servicemanager": "^3.3, to support hydrator plugin manager usage"
+        },
+        "time": "2019-12-31T17:06:44+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-release-2.4": "2.4.x-dev",
+                "dev-master": "3.0.x-dev",
+                "dev-develop": "3.1.x-dev"
+            },
+            "laminas": {
+                "component": "Laminas\\Hydrator",
+                "config-provider": "Laminas\\Hydrator\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Laminas\\Hydrator\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Serialize objects to arrays, and vice versa",
+        "homepage": "https://laminas.dev",
+        "keywords": [
+            "hydrator",
+            "laminas"
+        ]
+    },
+    {
+        "name": "laminas/laminas-stdlib",
+        "version": "3.2.1",
+        "version_normalized": "3.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laminas/laminas-stdlib.git",
+            "reference": "2b18347625a2f06a1a485acfbc870f699dbe51c6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/2b18347625a2f06a1a485acfbc870f699dbe51c6",
+            "reference": "2b18347625a2f06a1a485acfbc870f699dbe51c6",
+            "shasum": ""
+        },
+        "require": {
+            "laminas/laminas-zendframework-bridge": "^1.0",
+            "php": "^5.6 || ^7.0"
+        },
+        "replace": {
+            "zendframework/zend-stdlib": "self.version"
+        },
+        "require-dev": {
+            "laminas/laminas-coding-standard": "~1.0.0",
+            "phpbench/phpbench": "^0.13",
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+        },
+        "time": "2019-12-31T17:51:15+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2.x-dev",
+                "dev-develop": "3.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Laminas\\Stdlib\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "SPL extensions, array utilities, error handlers, and more",
+        "homepage": "https://laminas.dev",
+        "keywords": [
+            "laminas",
+            "stdlib"
+        ]
+    },
+    {
+        "name": "laminas/laminas-zendframework-bridge",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
+            "reference": "bfbbdb6c998d50dbf69d2187cb78a5f1fa36e1e9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/bfbbdb6c998d50dbf69d2187cb78a5f1fa36e1e9",
+            "reference": "bfbbdb6c998d50dbf69d2187cb78a5f1fa36e1e9",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
+            "squizlabs/php_codesniffer": "^3.5"
+        },
+        "time": "2020-04-03T16:01:00+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev",
+                "dev-develop": "1.1.x-dev"
+            },
+            "laminas": {
+                "module": "Laminas\\ZendFrameworkBridge"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/autoload.php"
+            ],
+            "psr-4": {
+                "Laminas\\ZendFrameworkBridge\\": "src//"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Alias legacy ZF class names to Laminas Project equivalents.",
+        "keywords": [
+            "ZendFramework",
+            "autoloading",
+            "laminas",
+            "zf"
+        ]
+    },
+    {
+        "name": "nikic/php-parser",
+        "version": "v4.4.0",
+        "version_normalized": "4.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikic/PHP-Parser.git",
+            "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+            "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+            "shasum": ""
+        },
+        "require": {
+            "ext-tokenizer": "*",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "ircmaxell/php-yacc": "0.0.5",
+            "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+        },
+        "time": "2020-04-10T16:34:50+00:00",
+        "bin": [
+            "bin/php-parse"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpParser\\": "lib/PhpParser"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Nikita Popov"
+            }
+        ],
+        "description": "A PHP parser written in PHP",
+        "keywords": [
+            "parser",
+            "php"
+        ]
+    },
+    {
+        "name": "psr/container",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/container.git",
+            "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+            "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2017-02-14T16:28:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Container\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common Container Interface (PHP FIG PSR-11)",
+        "homepage": "https://github.com/php-fig/container",
+        "keywords": [
+            "PSR-11",
+            "container",
+            "container-interface",
+            "container-interop",
+            "psr"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2020-03-23T09:12:05+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "spiral/console",
+        "version": "v1.3.3",
+        "version_normalized": "1.3.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/console.git",
+            "reference": "b83190115cbaefcf846b679a5e75f7abc7f990d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/console/zipball/b83190115cbaefcf846b679a5e75f7abc7f990d1",
+            "reference": "b83190115cbaefcf846b679a5e75f7abc7f990d1",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2",
+            "spiral/core": "^1.0",
+            "symfony/console": "^2.5.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~7.0",
+            "spiral/code-style": "^1.0"
+        },
+        "time": "2020-03-13T10:05:16+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Console\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anton Titov / Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "Console Core, Auto-Discovery, Command Sequencing"
+    },
+    {
+        "name": "spiral/core",
+        "version": "v1.4.4",
+        "version_normalized": "1.4.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/core.git",
+            "reference": "86ffeac422f2f368a890ccab71cf6a8b20668176"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/core/zipball/86ffeac422f2f368a890ccab71cf6a8b20668176",
+            "reference": "86ffeac422f2f368a890ccab71cf6a8b20668176",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2",
+            "psr/container": "^1.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~7.0",
+            "spiral/code-style": "^1.0"
+        },
+        "time": "2019-12-27T08:47:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Core\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "Spiral Core: IoC container, IoC scopes, factory, memory, configuration interfaces"
+    },
+    {
+        "name": "spiral/database",
+        "version": "v2.7.14",
+        "version_normalized": "2.7.14.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/database.git",
+            "reference": "771039cbbe3985b5629c581138c7044c4ce02064"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/database/zipball/771039cbbe3985b5629c581138c7044c4ce02064",
+            "reference": "771039cbbe3985b5629c581138c7044c4ce02064",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "php": "^7.2",
+            "spiral/core": "^1.1",
+            "spiral/logger": "^1.0",
+            "spiral/pagination": "^2.2"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~8.0",
+            "spiral/code-style": "^1.0",
+            "spiral/dumper": "^1.0",
+            "spiral/tokenizer": "^2.1"
+        },
+        "time": "2020-04-23T12:41:59+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Database\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anton Titov / Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "DBAL, schema introspection, migration and pagination"
+    },
+    {
+        "name": "spiral/files",
+        "version": "v2.0.2",
+        "version_normalized": "2.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/files.git",
+            "reference": "c847078b83a60fce80ff4660fd6fdb81493c0dc6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/files/zipball/c847078b83a60fce80ff4660fd6fdb81493c0dc6",
+            "reference": "c847078b83a60fce80ff4660fd6fdb81493c0dc6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~7.0"
+        },
+        "time": "2019-04-30T11:27:51+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Files\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "File Toolkit: atomic file manager"
+    },
+    {
+        "name": "spiral/logger",
+        "version": "v1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/logger.git",
+            "reference": "d693b5f8259a25f20893ed14045aea4a7438dfda"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/logger/zipball/d693b5f8259a25f20893ed14045aea4a7438dfda",
+            "reference": "d693b5f8259a25f20893ed14045aea4a7438dfda",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2",
+            "psr/log": "^1.0",
+            "spiral/core": "^1.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~7.0",
+            "spiral/code-style": "^1.0"
+        },
+        "time": "2019-11-13T06:29:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Logger\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anton Titov / Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "LogFactory and global log listeners"
+    },
+    {
+        "name": "spiral/pagination",
+        "version": "v2.2.2",
+        "version_normalized": "2.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/pagination.git",
+            "reference": "c2ccf0c3c38fc6cdb2e547685008898dc5804e6f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/pagination/zipball/c2ccf0c3c38fc6cdb2e547685008898dc5804e6f",
+            "reference": "c2ccf0c3c38fc6cdb2e547685008898dc5804e6f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.1",
+            "phpunit/phpunit": "~7.0"
+        },
+        "time": "2019-04-30T11:36:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Pagination\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anton Titov / Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "Common pagination interfaces"
+    },
+    {
+        "name": "spiral/tokenizer",
+        "version": "v2.1.8",
+        "version_normalized": "2.1.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spiral/tokenizer.git",
+            "reference": "5387797621402f469b240d5c0121a317fb57155e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spiral/tokenizer/zipball/5387797621402f469b240d5c0121a317fb57155e",
+            "reference": "5387797621402f469b240d5c0121a317fb57155e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1",
+            "spiral/core": "^1.0",
+            "spiral/logger": "^1.0",
+            "symfony/finder": "^4.1|^5.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~7.0",
+            "squizlabs/php_codesniffer": "^3.4"
+        },
+        "time": "2019-12-11T19:29:38+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spiral\\Tokenizer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anton Titov / Wolfy-J",
+                "email": "wolfy.jd@gmail.com"
+            }
+        ],
+        "description": "Static Analysis: Class and Invocation locators"
+    },
+    {
+        "name": "symfony/console",
+        "version": "v5.0.8",
+        "version_normalized": "5.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/console.git",
+            "reference": "5fa1caadc8cdaa17bcfb25219f3b53fe294a9935"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/console/zipball/5fa1caadc8cdaa17bcfb25219f3b53fe294a9935",
+            "reference": "5fa1caadc8cdaa17bcfb25219f3b53fe294a9935",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2.5",
+            "symfony/polyfill-mbstring": "~1.0",
+            "symfony/polyfill-php73": "^1.8",
+            "symfony/service-contracts": "^1.1|^2"
+        },
+        "conflict": {
+            "symfony/dependency-injection": "<4.4",
+            "symfony/event-dispatcher": "<4.4",
+            "symfony/lock": "<4.4",
+            "symfony/process": "<4.4"
+        },
+        "provide": {
+            "psr/log-implementation": "1.0"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "^4.4|^5.0",
+            "symfony/dependency-injection": "^4.4|^5.0",
+            "symfony/event-dispatcher": "^4.4|^5.0",
+            "symfony/lock": "^4.4|^5.0",
+            "symfony/process": "^4.4|^5.0",
+            "symfony/var-dumper": "^4.4|^5.0"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": "",
+            "symfony/lock": "",
+            "symfony/process": ""
+        },
+        "time": "2020-03-30T11:42:42+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Console\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v5.0.8",
+        "version_normalized": "5.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/finder.git",
+            "reference": "600a52c29afc0d1caa74acbec8d3095ca7e9910d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/600a52c29afc0d1caa74acbec8d3095ca7e9910d",
+            "reference": "600a52c29afc0d1caa74acbec8d3095ca7e9910d",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2.5"
+        },
+        "time": "2020-03-27T16:56:45+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Finder\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/polyfill-mbstring",
+        "version": "v1.15.0",
+        "version_normalized": "1.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-mbstring.git",
+            "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+            "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "ext-mbstring": "For best performance"
+        },
+        "time": "2020-03-09T19:04:49+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.15-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Mbstring\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for the Mbstring extension",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "mbstring",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
+        "name": "symfony/polyfill-php73",
+        "version": "v1.15.0",
+        "version_normalized": "1.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-php73.git",
+            "reference": "0f27e9f464ea3da33cbe7ca3bdf4eb66def9d0f7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/0f27e9f464ea3da33cbe7ca3bdf4eb66def9d0f7",
+            "reference": "0f27e9f464ea3da33cbe7ca3bdf4eb66def9d0f7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2020-02-27T09:26:54+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.15-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Php73\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ],
+            "classmap": [
+                "Resources/stubs"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
+        "name": "symfony/service-contracts",
+        "version": "v2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/service-contracts.git",
+            "reference": "144c5e51266b281231e947b51223ba14acf1a749"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/service-contracts/zipball/144c5e51266b281231e947b51223ba14acf1a749",
+            "reference": "144c5e51266b281231e947b51223ba14acf1a749",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2.5",
+            "psr/container": "^1.0"
+        },
+        "suggest": {
+            "symfony/service-implementation": ""
+        },
+        "time": "2019-11-18T17:27:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Contracts\\Service\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Generic abstractions related to writing services",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "abstractions",
+            "contracts",
+            "decoupling",
+            "interfaces",
+            "interoperability",
+            "standards"
+        ]
+    }
+]

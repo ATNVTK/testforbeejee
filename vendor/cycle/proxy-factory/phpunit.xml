@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         verbose="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         stopOnError="false"
+>
+
+    <testsuites>
+        <testsuite name="Proxy Factory">
+            <directory>./tests/Promise/</directory>
+        </testsuite>
+        <testsuite name="Proxy Factory 74">
+            <directory phpVersion="7.4.0-dev" phpVersionOperator="ge">./tests/php74/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

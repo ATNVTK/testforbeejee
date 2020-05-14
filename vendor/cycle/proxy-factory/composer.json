@@ -1,0 +1,40 @@
+{
+  "name": "cycle/proxy-factory",
+  "type": "module",
+  "license": "MIT",
+  "description": "Proxy Factory Interface implementation for cycle ORM",
+  "require": {
+    "php": "^7.2",
+    "ext-mbstring": "*",
+    "nikic/php-parser": "^4.2",
+    "doctrine/instantiator": "^1.2",
+    "cycle/orm": "^1.1",
+    "spiral/files": "^2.0"
+  },
+  "require-dev": {
+    "ext-pdo": "*",
+    "phpunit/phpunit": "~7.0",
+    "cycle/annotated": "^1.0",
+    "spiral/code-style": "^1.0",
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cycle\\ORM\\Promise\\": "src/Promise"
+    },
+    "files": [
+      "src/functions/utils.php",
+      "src/functions/expressions.php",
+      "src/functions/version.php",
+      "src/functions/injector.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Cycle\\ORM\\Promise\\Tests\\": "tests/Promise/",
+      "Cycle\\ORM\\Promise\\Tests74\\": "tests/php74/",
+      "Cycle\\ORM\\Promise\\Tests\\Promises\\": "tests/fixtures/promises/",
+      "": "tests/fixtures/withoutNamespace/"
+    }
+  }
+}
